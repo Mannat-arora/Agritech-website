@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Overlay Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wscolor: '#2699fb',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+<nav class="w-full bg-indigo-200 flex items-center justify-between px-2 py-2 flex-wrap md:flex-nowrap">
+  <!-- Logo -->
+  <img class="h-10 w-auto rounded-lg ml-1 md:ml-4" src="images/Screenshot 2025-06-09 133654.png" alt="Logo" />
+
+  <!-- Navigation Links -->
+<ul class="flex flex-wrap items-center min-w-0 ml-2 md:ml-4 font-semibold text-[13px] sm:text-sm md:text-lg mt-2 md:mt-0 space-x-2 md:space-x-5">
+  <li class="cursor-pointer relative hover:text-blue-600 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all after:duration-300">Products</li>
+  
+  <li class="cursor-pointer relative hover:text-blue-600 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all after:duration-300">Solutions</li>
+  
+  <li class="cursor-pointer relative hover:text-blue-600 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all after:duration-300">Pricing</li>
+  
+  <li class="cursor-pointer relative hover:text-blue-600 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all after:duration-300">Distributors</li>
+  
+  <li class="cursor-pointer relative hover:text-blue-600 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all after:duration-300">About</li>
+</ul>
+
+
+  <!-- Button + User -->
+  <div class="flex items-center space-x-2 md:space-x-3 mt-2 md:mt-0 ml-auto mr-2 md:mr-6 flex-shrink-0">
+    <button class="bg-orange-400 rounded-full border-2 border-white px-2 md:px-3 py-1 text-[10px] sm:text-xs md:text-sm whitespace-nowrap">
+      Try 14 days free
+    </button>
+    <div class="flex items-center space-x-1">
+      <img class="h-7 w-7 sm:h-8 sm:w-8 rounded-full" src="images/Screenshot 2025-06-09 170957.png" alt="User" />
+      <p class="text-black font-semibold text-[10px] sm:text-xs md:text-base">INT</p>
+    </div>
+  </div>
+</nav>
+
+
+<div class="h-10 w-full bg-gradient-to-b from-indigo-200 to-transparent"></div>
+<header class="relative w-full">
+
+  <img class="h-[75vh] w-screen object-cover rounded-bl-[20vh]" src="images/ChatGPT Image Jun 9, 2025, 12_59_51 PM.png" alt="">
+
+
+  <div class="absolute top-[30%] left-12 transform -translate-y-1/2 text-white ">
+    <h1 class="text-4xl md:text-7xl font-extrabold ml-20 mt-[5vh] ">
+      Get ahead with the<br>
+      best farmers<br>
+      weather app
+    </h1>
+  </div>
+  <div class="absolute top-[50%] flex flex-row space-x-20 md:space-x-40">
+    <button class="bg-green-500 ml-9 md:ml-40 md:mt-[10%] text-white text-xl md:text-2xl font-semibold rounded-full p-3 md:p-5 hover:rotate-6 hover:bg-green-600">
+      See features
+    </button>
+    
+    <div class="flex items-center justify-center mt-4 md:mt-14">
+  <p class="text-white text-xl sm:text-base md:text-xl font-medium md:font-semibold hover:animate-bounce">
+    Try 14 days free →
+  </p>
+</div>
+  </div>
+
+</header>
+<div class="mt-6 text-center">
+  <h1 class="text-4xl md:text-6xl text-black font-semibold">Your field. Your farm.<br>Your weather.</h1>
+</div>
+<div class="text-center">
+  <p class="text-slate-600 text-[2vh] md:text-[3vh]">Real-time local weather data and farming dashboards based on<br>your weather, right at your fingertips.</p>
+</div>
+<div class="flex flex-col md:flex-row justify-center items-center mt-10 space-y-4 md:space-y-0 md:space-x-20">
+  <div class="border h-[40vh] w-100 rounded-lg p-4 hover:animate-bounce">
+    <img class="h-[12vh] mx-auto" src="images/Screenshot 2025-06-10 022120.png" alt="">
+    <h1 class="text-black font-bold text-2xl mt-4 text-center">Actionable data</h1>
+    <p class="text-center mt-2 text-2xl">Tailor-made farming insights based <br>on your local weather</p>
+  </div>
+
+  <div class="border h-[40vh] w-100 rounded-lg p-4 hover:animate-bounce">
+    <img class="h-[12vh] mx-auto" src="images/Screenshot 2025-06-10 022748.png" alt="">
+    <h1 class="text-black font-bold text-2xl mt-4 text-center">Regular updates</h1>
+    <p class="text-center mt-2 text-2xl">Always get the most out of your local <br>weather with new features</p>
+  </div>
+
+  <div class="border h-[40vh] w-100 rounded-lg p-4 hover:animate-bounce">
+    <img class="h-[12vh] mx-auto" src="images/Screenshot 2025-06-10 022829.png" alt="">
+    <h1 class="text-black font-bold text-2xl mt-4 text-center">Unlimited access</h1>
+    <p class="text-center mt-2 text-2xl">Reap the benefits of your entire team <br>using hyperlocal weather data</p>
+  </div>
+</div>
+
+
+<div class="flex flex-col md:flex-row mt-6">
+  <div class="p-5 md:px-[20vh]">
+  <h1 class="md:text-6xl text-5xl font-semibold">Point-based<br>forecasting for more<br> localized data</h1>
+  <div class="w-[7vh] h-2 border-b-4 border-yellow-500 mt-5 rounded-2xl md:mt-4 mb-12 ml-0"></div>
+  <p class="text-slate-600 text-xl mt-0 md:text-2xl">One of the biggest challenges farmers face is unreliable weather predictions. Traditional forecasts use grids to cover large areas, ignoring local variation and weather changes.<br>
+
+<p class="text-slate-600 text-xl mt-2 md:text-2xl">By gathering data directly from your field, Cordulus delivers hyperlocal forecasts, tailor-made to your location.<br></p>
+
+<p class="text-slate-600 text-xl mt-2 md:text-2xl">No longer are you forced to rely on inaccurate forecasts. With Cordulus, you’ll get precise, field-specific weather data to protect your crops and optimize your productivity.</p>
+  </div>
+  <div>
+    <img class="h-45 w-45 p-4 md:h-[60vh] md:w-[110vh] hover:animate-bounce" src="images/Screenshot 2025-06-10 162320.png" alt="">
+  </div>
+</div>
+
+<div class="flex flex-col md:flex-row mt-6">
+  <!-- Image First on md and up, Second on mobile -->
+  <div class="order-2 md:order-1">
+    <img class="h-45 w-45 p-4 md:h-[60vh] md:w-[120vh] mt-0 md:ml-[15vh] hover:animate-bounce" src="images/Screenshot 2025-06-10 165540.png" alt="">
+  </div>
+
+  <!-- Text Second on md and up, First on mobile -->
+  <div class="order-1 md:order-2 p-5 md:px-[20vh]">
+    <h1 class="md:text-6xl text-5xl font-semibold">Pushing boundaries with AI forecasts</h1>
+    <div class="w-[7vh] h-2 border-b-4 border-yellow-500 mt-5 rounded-2xl md:mt-4 mb-12 ml-0"></div>
+    <p class="text-slate-600 text-xl mt-0 md:text-2xl">
+      The explosion of AI technology in recent years is fundamentally changing weather forecasting. Countless resources are being spent trying to crack the code of how we can predict the weather more accurately.
+    </p><br>
+    <p class="text-slate-600 text-xl mt-2 md:text-2xl">
+      Cordulus is amongst the forerunners in this movement, pushing toward a world where the full potential of weather forecasting can be realized. And AI is a crucial part of this equation.
+    </p>
+    <button class="border-2 border-green-700 rounded-full mt-1 p-2 mx-[10vh] md:mt-6">
+      <p class="text-green-700 font-semibold">Discover how AI is revolutionizing meteorology</p>
+    </button>
+
+  </div>
+</div>
+
+<div class="relative w-[65vh] h-[40vh] md:h-[50vh] px-5 md:w-[130vh] md:ml-[40vh]">
+  <img class="h-full w-full object-cover rounded-[10vh]" src="images/ChatGPT Image Jun 10, 2025, 06_00_09 PM.png" alt="">
+
+  <div class="absolute inset-0 flex flex-col justify-center px-8">
+    <h1 class="text-white text-4xl md:text-4xl font-bold md:font-extrabold md:text-5xl">Want to try it out for <br>yourself?</h1>
+    <p class="text-white text-xl mt-2 md:text-2xl md:mt-6">Get hyperlocal weather insights anytime, anywhere. Try 14 days for free, no strings attached.</p>
+    <button class="bg-orange-500 hover:animate-bounce hover:bg-orange-400 rounded-full text-white font-semibold px-2 md:px-2 py-1 text-[15px] md:text-[20px] whitespace-nowrap w-[15vh] md:w-[20vh] md:ml-[50vh] mt-4 md:mt-4 ml-[20vh] md:p-3">
+      Try it out now
+    </button>
+  </div>
+</div>
+<footer class="relative w-full">
+  <div>
+    <img class="mt-[8vh] rounded-tl-[10vh] rounded-tr-[10vh] h-[140vh] md:h-[70vh] md:w-screen" src="images/ChatGPT Image Jun 10, 2025, 08_27_34 PM.png" alt="">
+  </div>
+  <div class="absolute top-[10vh] text-white mx-8 flex flex-col md:flex-row flex-wrap md:space-x-[50vh]">
+    <div class="text-3xl font-bold md: mt-7 md:ml-[20vh]">Product
+    <ul class="mt-4 text-slate-300 text-[2vh]">
+      <li class="mt-2">Weather Station</li>
+      <li class="mt-2">Weather App</li>
+      <li class="mt-2">Forecast</li>
+      <li class="mt-2">Pricing</li>
+      <li class="mt-2">Distributors</li>
+    </ul>
+    </div>
+
+    <div class="text-3xl mt-7 font-bold">Solutions
+    <ul class="mt-4 text-slate-300 text-[2vh]">
+      <li class="mt-2">Agriculture</li>
+      <li class="mt-2">Construction</li>
+      <li class="mt-2">Winter Maintainance</li>
+      <li class="mt-2">Weather Data at Scale</li>
+    </ul>
+    </div>
+
+    <div class="text-3xl font-bold mt-7">About
+    <ul class="mt-4 text-slate-300 text-[2vh] md:mr-[12vh]">
+      <li class="mt-2">Company</li>
+      <li class="mt-2">Contact</li>
+      <li class="mt-2">Glossary</li>
+      <li class="mt-2">Blog</li>
+      <li class="mt-2">Videos</li>
+      <li class="mt-2">Terms and Conditions</li>
+      <li class="mt-2">Privacy Policy</li>
+    </ul>
+    </div>
+    <div class="w-[60vh] md:w-[130vh] h-2 border-b-2 border-slate-600 mt-5 rounded-2xl md:mt-4 mb-12 ml-0"></div>
+  </div>
+
+  <div class="flex flex-col md:flex-row  absolute top-[118vh] md:top-[60vh] justify-center items-center">
+    <div class="ml-[25vh]">
+      <img  class="rounded-full h-[5vh] w-[13vh] md:ml-[10vh] " src="images/Screenshot 2025-06-09 133654.png" alt="">
+    </div>
+    <div class="ml-[15vh]">
+      <p class="text-slate-500 mt-3">Copyright © Cordulus 2024 | All rights reserved</p>
+    </div>
+    <div class="flex space-x-5 ml-[20vh] mt-3">
+      <img class="mt-2 hover:animate-bounce" src="images/Screenshot 2025-06-11 132156.png" alt="">
+      <img class="mt-2 hover:animate-bounce" src="images/Screenshot 2025-06-11 132202.png" alt="">
+      <img class="mt-2 mt-2 hover:animate-bounce" src="images/Screenshot 2025-06-11 132232.png" alt="">
+      <img class="mt-3 mt-2 hover:animate-bounce" src="images/Screenshot 2025-06-11 132237.png" alt="">
+    </div>
+
+  </div>
+ 
+</footer>
+
+
+</body>
+</html>
